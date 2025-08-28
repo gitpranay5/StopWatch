@@ -3,6 +3,7 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
+    paths: ["stopwatch/**", ".github/workflows/static.yml"]
   pull_request:
     branches: ["main"]
     

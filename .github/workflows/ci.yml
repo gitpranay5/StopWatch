@@ -1,0 +1,32 @@
+# this ci pipeline workflow is used to build and deploy application to github pages
+name: CI
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'stopwatch/**'
+            - '.github/workflows/ci.yml'
+    pull_request:
+        branches:
+            - main
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Log commit info
+              run: echo "Deploying commit ${{ github.sha }} by ${{ github.actor }}"
+
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist

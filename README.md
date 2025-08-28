@@ -1,3 +1,5 @@
 # StopWatch
 
-live link : https://gitpranay5.github.io/StopWatch/stopwatch/stopwatch.html
+live URL: `https://gitpranay5.github.io/StopWatch/`
+
+live URL : https://gitpranay5.github.io/StopWatch/stopwatch/stopwatch.html

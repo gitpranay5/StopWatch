@@ -12,18 +12,19 @@ body{
     width: 420px;
     height: 260px;
     text-align: center;
-    background-color: rgb(255, 251, 0);
+    background-color: rgb(243, 240, 68);
     line-height: 1.5rem;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 1rem rgb(255, 251, 0);
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
 }
 h2{
     font-weight: bold;
     color: rgb(0, 0, 0);
     font-size: 2rem;
     gap: 2rem;
-    font-family:'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 1rem;
 }
 p{
     display: flex;
